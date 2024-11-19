@@ -1,0 +1,10 @@
+targets:
+  $default:
+    builders:
+      table_generator:
+        import: "package:table_generator/table_generator.dart"
+        builder_factories: ["syncingTableBuilder"]
+        build_extensions: {".dart": [".g.dart"]}
+        auto_apply: dependents
+        build_to: cache
+        applies_builders: ["source_gen|combining_builder"]
