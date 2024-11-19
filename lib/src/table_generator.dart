@@ -4,7 +4,7 @@ import 'package:table_generator/src/annotations.dart';
 import 'package:analyzer/dart/element/element.dart';
 import 'dart:async';
 
-class SyncingTableGenerator extends GeneratorForAnnotation<Entity> {
+class TableGenerator extends GeneratorForAnnotation<Entity> {
   @override
   FutureOr<String> generateForAnnotatedElement(
       Element element, ConstantReader annotation, BuildStep buildStep) {

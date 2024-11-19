@@ -7,5 +7,5 @@ import 'package:source_gen/source_gen.dart';
 
 import 'src/table_generator.dart';
 
-Builder syncingTableBuilder(BuilderOptions options) =>
-    SharedPartBuilder([SyncingTableGenerator()], 'table_generator');
+Builder tableBuilder(BuilderOptions options) =>
+    SharedPartBuilder([TableGenerator()], 'table_generator');
